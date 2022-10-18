@@ -20,7 +20,8 @@ const App = () => {
   const onKeyboardEnter=(event)=>{
       if(event.keyCode === 13){
         let input = document.getElementById("timeCount").value;
-        if(!isNaN(input)){
+        console.log(input!=0);
+        if(!isNaN(input) && input!=0){
           console.log(input);
           setTime(parseInt(input));
         }
