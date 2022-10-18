@@ -1,0 +1,21 @@
+<!-- <script>
+    console.log(!isNaN(45));
+    console.log(!isNaN("dfdf"));
+</script> -->
+
+<script>
+    setTimeout(()=>{
+        console.log("after one second it will called");
+    },1000)
+</script>
+
+<script>
+   const result = setInterval(()=>{
+        console.log("ever second interval will be called");
+    },1000);
+
+    setTimeout(()=>{
+        clearInterval(result);
+    },5000)
+
+</script>
